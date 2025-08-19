@@ -3,12 +3,12 @@ import "./globals.css";
 import { Albert_Sans, Figtree } from "next/font/google";
 
 
-export const figtree = Figtree({
+const figtree = Figtree({
   variable: "--font-figtree",
   subsets: ["latin"],
 });
 
-export const albertSans = Albert_Sans({
+const albertSans = Albert_Sans({
   variable: "--font-albert-sans",
   subsets: ["latin"],
 });
