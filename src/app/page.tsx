@@ -223,8 +223,8 @@ export default function Page() {
             <Badge className="mb-4 w-fit" variant="secondary">
               <Sparkles className="w-3 h-3 mr-1" /> Available for {MONTHS[new Date().getMonth()]} starts
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight font-header">
-              Senior software, applied <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">AI</span>, real traction.
+            <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight">
+              Senior software, applied <span className="text-keen-light-blue">AI</span>, real traction.
             </h1>
             <p className="mt-6 text-lg text-zinc-700 max-w-prose">
               I help AI founders ship the right thing fast—MVPs that earn usage, integrations that scale, and MLOps that won’t wake you at 3am.
@@ -258,7 +258,7 @@ export default function Page() {
               <CardContent className="grid sm:grid-cols-2 gap-4">
                 {SERVICES.slice(0, 4).map((s) => (
                   <div key={s.title} className="p-4 rounded-2xl border border-zinc-200/70">
-                    <div className="flex items-center gap-2 font-medium mb-2 font-header">{s.icon}{s.title}</div>
+                    <div className="flex items-center gap-2 font-medium mb-2">{s.icon}{s.title}</div>
                     <ul className="space-y-1 text-sm text-zinc-700 list-disc list-inside">
                       {s.points.map((p) => (
                         <li key={p}>{p}</li>
@@ -288,7 +288,7 @@ export default function Page() {
       {/* SERVICES */}
       <Section id="services" className="bg-zinc-50/60">
         <div className="flex items-end justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-header">Services for AI entrepreneurs</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight ">Services for AI entrepreneurs</h2>
           <a href={BRAND.calendly} target="_blank" rel="noreferrer" className="text-sm text-indigo-700 hover:text-indigo-900">Book a call →</a>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -316,7 +316,7 @@ export default function Page() {
       {/* WORK */}
       <Section id="work">
         <div className="flex items-end justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-header">Selected work</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight ">Selected work</h2>
           <a href="#contact" className="text-sm text-indigo-700 hover:text-indigo-900">Start a project →</a>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -344,7 +344,7 @@ export default function Page() {
 
       {/* PROCESS */}
       <Section id="process" className="bg-zinc-50/60">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8 font-header">How we’ll work together</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8 ">How we’ll work together</h2>
         <div className="grid md:grid-cols-4 gap-6">
           {PROCESS.map((p) => (
             <div key={p.step} className="p-6 rounded-2xl border border-zinc-200/70 bg-white">
@@ -369,17 +369,17 @@ export default function Page() {
       </Section>
 
       {/* CTA */}
-      <Section className="bg-gradient-to-r from-indigo-50 to-violet-50">
+      <Section className="bg-gradient-to-r from-keen-light-blue/20 to-keen-light-blue/30">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-2xl md:text-3xl font-semibold tracking-tight font-header">Have an AI product to ship?</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold tracking-tight ">Have an AI product to ship?</h3>
             <p className="text-zinc-700 mt-2 max-w-xl">Let’s scope the smallest high‑leverage bet and get you real user traction in weeks, not quarters.</p>
           </div>
           <div className="flex gap-3">
             <Button asChild size="lg" className="rounded-2xl">
               <a href={BRAND.calendly} target="_blank" rel="noreferrer"><Calendar className="w-4 h-4 mr-2"/>Book intro</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="rounded-2xl">
+            <Button asChild size="lg" variant="secondary" className="rounded-2xl">
               <a href="#contact"><MessageSquare className="w-4 h-4 mr-2"/>Ask a question</a>
             </Button>
           </div>
@@ -388,7 +388,7 @@ export default function Page() {
 
       {/* FAQS */}
       <Section id="faqs" className="bg-zinc-50/60">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8 font-header">FAQs</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8 ">FAQs</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {FAQS.map((f) => (
             <div key={f.q} className="p-6 rounded-2xl border border-zinc-200/70 bg-white">
@@ -403,7 +403,7 @@ export default function Page() {
       <Section id="contact">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight font-header">Let’s talk</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight ">Let’s talk</h2>
             <p className="text-zinc-700 mt-2">Tell me about your users, your wedge, and what you’d like to ship in the next 30 days.</p>
 
             <div className="mt-6 space-y-3 text-sm">
